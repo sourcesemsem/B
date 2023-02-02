@@ -57,7 +57,7 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
-    await msg.reply("**بـدء استخـراج الجلسـه 𝐑𝐄𝐏𝐓𝐇𝐎𝐍 ⌬....**")
+    await msg.reply("**بـدء استخـراج الجلسـه SEMO ⌬....**")
     if telethon:
         client = TelegramClient(StringSession(), api_id, api_hash)
     else:
@@ -117,7 +117,7 @@ async def generate_session(bot, msg, telethon=False):
     text = "**- كـود تيرمكـس {} 𝐑𝐄𝐏𝐓𝐇𝐎𝐍** \n\n{} \n\n**- تم الاستخـراج بواسطـة** @Repthon\n**- تحياتـي ..  روجر** @ZQ_LO ".format("تليثـون" if telethon else "بايروجـرام", string_session)
     await client.send_message("me", text)
     await client.disconnect()
-    await phone_code_msg.reply("**- تم إنشاء جلسة تيرمكس {} 𝐑𝐄𝐏𝐓𝐇𝐎𝐍 بنجاح ..** \n\n**- يرجى التحقق من حافظـة حسابـك واخذ الكود!**\n\n**- لا تقم بمشاركـة هذا الكود مع احـد ⚠️**\n\n".format("تليثـون" if telethon else "بايروجـرام"))
+    await phone_code_msg.reply("**- تم إنشاء جلسة تيرمكس {} SEMO بنجاح ..** \n\n**- يرجى التحقق من حافظـة حسابـك واخذ الكود!**\n\n**- لا تقم بمشاركـة هذا الكود مع احـد ⚠️**\n\n".format("تليثـون" if telethon else "بايروجـرام"))
 
 
 async def cancelled(msg):
